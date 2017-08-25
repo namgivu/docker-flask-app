@@ -5,4 +5,4 @@ s=$BASH_SOURCE ; s=$(dirname "$s") ; s=$(cd "$s" && pwd) ; export SCRIPT_HOME=$s
 
 source "$SCRIPT_HOME/common.sh"
 
-docker run -d -p $HOST_PORT:$CONTAINER_PORT $IMAGE_TAG
+docker run -d --name $CONTAINER_NAME -p $HOST_PORT:$CONTAINER_PORT $IMAGE_NAME_REMOTE
