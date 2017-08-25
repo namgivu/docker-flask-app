@@ -6,4 +6,4 @@ s="$SCRIPT_HOME/.." ; s=$(cd "$s" && pwd) ; export APP_HOME=$s
 
 source "$SCRIPT_HOME/common.sh"
 
-docker images | grep $IMAGE_TAG | awk '{ print $1 ":" $2 }'
+docker images | grep $IMAGE_NAME | awk '{ print $1 ":" $2 }'

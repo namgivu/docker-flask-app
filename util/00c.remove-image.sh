@@ -6,4 +6,4 @@ s="$SCRIPT_HOME/.." ; s=$(cd "$s" && pwd) ; export APP_HOME=$s
 
 source "$SCRIPT_HOME/common.sh"
 
-docker rmi $IMAGE_TAG
+docker rmi -f $IMAGE_TAG
