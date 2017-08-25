@@ -1,3 +1,5 @@
+##region github generated
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -99,3 +101,13 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+##endregion github generated
+
+
+##region app's gitignore
+.idea/docker-flask-app.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+##endregion app's gitignore
