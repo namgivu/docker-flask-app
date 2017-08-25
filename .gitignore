@@ -106,8 +106,12 @@ ENV/
 
 
 ##region app's gitignore
+
 .idea/docker-flask-app.iml
 .idea/misc.xml
 .idea/modules.xml
 .idea/workspace.xml
+
+util/common_local.sh
+
 ##endregion app's gitignore
