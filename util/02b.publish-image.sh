@@ -8,5 +8,8 @@ s=$BASH_SOURCE ; s=$(dirname "$s") ; s=$(cd "$s" && pwd) ; export SCRIPT_HOME=$s
 
 source "$SCRIPT_HOME/common.sh"
 
-sh="docker tag $IMAGE_NAME_LOCAL $IMAGE_NAME_REMOTE"
+sh="
+docker tag $IMAGE_NAME_LOCAL $IMAGE_NAME_REMOTE;
+docker push $IMAGE_NAME_REMOTE;
+"
 eval $sh
